@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #F2F5FC;
+}
+.title{
+    font-size: 35px;
+    font-weight: 500;
+}
+.primary-btn{
+    background: #5561FC;
+    border-radius: 5px;
+    padding: 8px 15px;
+    border: none;
+    margin-right: 40px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.description{
+    font-size: 14px;
+    font-weight: 400;
+    color: #121212;
+}
+.board,
+.analytics-details,
+nav{
+    width: 95%;
+    max-width: 95%;
+    margin: 0 auto;
+}
+/* Whole site style start */
+.header-logo{
+    margin-left: 40px;
+}
+nav{
+    width: 95%;
+    max-width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px auto;
+    height: 80px;
+}
+nav>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+nav>ul .primary-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+.material-symbols-outlined{
+    margin-right: 8px;
+}
+/* Analytics Section style start */
+.analytics-details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.Action{
+    padding: 15px;
+}
+.job,
+.analytics-card{
+    padding: 15px 35px 15px 15px;
+}
+.analytics-card{
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%), 0 5px 15px 0 rgb(0 0 0 / 10%);
+}
+.Action{
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%), 0 5px 15px 0 rgb(0 0 0 / 10%);
+}
+.analytics-top-title{
+    color: #888787bb;
+    font-size: 16px;
+    font-weight: 400;
+}
+.analytics-title{
+    color: #414040;
+}
+
+.bar{
+    font-size: 70px;
+    color: #727272;
+}
+/* Analytics Section style End */
+
+/* board section style Start */
+.circle-wrap {
+    margin: 150px auto;
+    width: 150px;
+    height: 150px;
+    background: #fefcff;
+    border-radius: 50%;
+    border: 1px solid #cdcbd0;
+  }
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #227ded;
+}
+.circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+  
+  .mask.full,
+  .circle .fill {
+    animation: fill ease-in-out 3s;
+    transform: rotate(135deg);
+  }
+  
+  @keyframes fill{
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(135deg);
+    }
+  }
+  .circle-wrap .inside-circle {
+    width: 122px;
+    height: 122px;
+    border-radius: 50%;
+    background: #d2eaf1;
+    line-height: 120px;
+    text-align: center;
+    margin-top: 14px;
+    margin-left: 14px;
+    color: #1e51dc;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
+  }
+.job{
+    grid-column: 2/-1;
+}
+.jobs{
+    display: flex;
+    align-items: center;
+}
+
+.btn{
+    border: none;
+    color: #5561FC;
+    font-size: 30px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.job-title{
+    font-size: 22px;
+    color: #414040;
+}
+.clinet-info{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #fff; */
+    padding: 10px;
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 10%), 0 5px 15px 0 rgb(0 0 0 / 10%);
+}
+.applicants-btn{
+    border: none;
+    border-radius: 5px;
+    background: #5561FC;
+    padding: 7px 10px ;
+}
+.customer-info{
+    font-size: 13px;
+    font-weight: 300;
+}
+/* board section style End */

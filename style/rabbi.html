@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .rabbi{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .box{
+            background-color: red;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="rabbi">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
+
+
+<div class="board">
+    <div class="user-percent">
+        <h3 class="title">Action needed</h3>
+        <div class="circle-wrap">
+            <div class="circle">
+                <div class="mask half">
+                    <div class="fill"></div>
+                </div>
+                <div class="mask full">
+                    <div class="fill"></div>
+                 </div>
+                 <div class="inside-circle"> 75% </div>
+            </div>
+        </div>
+    </div>
+    <div class="user-activity"></div>
+</div>
